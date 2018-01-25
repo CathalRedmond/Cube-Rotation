@@ -47,7 +47,6 @@ public:
 	Matrix3D rotationY(double t_angle) const;
 	Matrix3D rotationZ(double t_angle) const;
 	Matrix3D translate(double t_dx, double t_dy) const;
-	Matrix3D translate(double t_dx, double t_dy, double t_dz) const;
 	Matrix3D scale(double t_dx, double t_dy) const;
 	Matrix3D scale3D(double t_dx) const;
 

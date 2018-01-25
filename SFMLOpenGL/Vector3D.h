@@ -53,18 +53,7 @@ public:
 
 	std::string toString() const;
 
-	// operator for converting vector 3D class to sfml vectors
-	operator sf::Vector2i() { return sf::Vector2i(static_cast<int>(m_x), static_cast<int>(m_y)); };
-	operator sf::Vector2f() { return sf::Vector2f(static_cast<float>(m_x), static_cast<float>(m_y)); };
-	operator sf::Vector2u() { return sf::Vector2u(static_cast<unsigned int>(m_x), static_cast<unsigned int>(m_y)); };
-	operator sf::Vector3i() { return sf::Vector3i(static_cast<int>(m_x), static_cast<int>(m_y), static_cast<int>(m_z)); };
-	operator sf::Vector3f() { return sf::Vector3f(static_cast<float>(m_x), static_cast<float>(m_y), static_cast<float>(m_z)); };
 
-	Vector3D(sf::Vector3f vector);
-	Vector3D(sf::Vector3i vector);
-	Vector3D(sf::Vector2i vector);
-	Vector3D(sf::Vector2u vector);
-	Vector3D(sf::Vector2f vector);
 
 private:
 	// x component of the vector

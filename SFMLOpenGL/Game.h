@@ -1,3 +1,6 @@
+/// <summary>
+/// @author Cathal Redmond
+/// </summary>
 #ifndef GAME_H
 #define GAME_H
 
@@ -32,27 +35,18 @@ private:
 	sf::Clock clock;
 	sf::Time elapsed;
 
-	void cubeInitPos();
-
+	void cubeInitializePositions();
 
 
 	Vector3D m_cubePositions[8];
 	Matrix3D m_matrix;
 
+	// bool for if the  cube should move
 	bool transform{ false };
 
 
 	float rotationAngle = 0.0f;
-	void outputPoints();
 
-	Vector3D normalVectors[6];
-	void getNormalVectorsForFaces();
-
-	double z[8];
-
-
-	Vector3D origin{ 0.0,0.0,0.0 };
-	Vector3D translateAmount[8];
 };
 
 #endif //!GAME_H
